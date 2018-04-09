@@ -1,0 +1,35 @@
+.thumbnail {
+  position: relative;
+  height: 210px;
+  width: 20%;
+  max-width: 180px;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+
+  &:hover &__remove {
+    display: block;
+  }
+
+  &__remove {
+    position: absolute;
+    display: none;
+    right: 10px;
+    top: 10px;
+  }
+}
+.thumbnail_create>img, .thumbnail_create a>img {
+  height: 100%;
+}
+
+#app > footer {
+  z-index: 9;
+}
+
+.navbar .navbar-collapse {
+  border-bottom: transparent;
+}
+
+.input_error {
+  outline: 1px solid red;
+}
